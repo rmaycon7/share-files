@@ -1,4 +1,5 @@
 dependencies:
+  '@fortawesome/fontawesome-free': 5.8.2
   axios: 0.18.0
   bootstrap-vue: 2.0.0-rc.19
   core-js: 2.6.5
@@ -762,6 +763,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-aPvkXyU2SPOnztlgo8n9cEiXW755mgyvueUPcpStqdzoSPm0fjO0vQBjLkt3JKJW7ufikfcnMTTPsN1xaTsBPA==
+  /@fortawesome/fontawesome-free/5.8.2:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-E4fDUF4fbu9AxKpaQQqCN3XBnNzb/5e0Gvd9OaQsYkK574LVI57v/EqqPfIm/mC7jYbxaPNrhvT5AF+Yzwyizg==
   /@intervolga/optimize-cssnano-plugin/1.0.6_webpack@4.28.4:
     dependencies:
       cssnano: 4.1.10
@@ -8634,6 +8641,7 @@ packages:
     resolution:
       integrity: sha512-jcKpkthap6x63MB4TxwCyuIGkV0oYP/YRyuQU5UO0Yz/E/ZAu+653/uov+phdmO54n6BcvFRyyt0RRrWdN2mpw==
 specifiers:
+  '@fortawesome/fontawesome-free': ^5.8.2
   '@vue/cli-plugin-babel': ^3.6.0
   '@vue/cli-plugin-eslint': ^3.6.0
   '@vue/cli-plugin-pwa': ^3.6.0
