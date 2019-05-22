@@ -62,7 +62,6 @@ const get_by_type = async ({
         commit('changeVersion', null, {
             root: true
         })
-
         // commit('changeVersion', null)
         commit('SET_ERROR', null)
 
