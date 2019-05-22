@@ -40,6 +40,14 @@
   },
   "description": "## Project setup ``` pnpm install ```",
   "main": ".eslintrc.js",
-  "author": "",
-  "license": "ISC"
+  "author": "Maycon Rebordão",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmaycon/share-files.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rmaycon/share-files/issues"
+  },
+  "homepage": "https://github.com/rmaycon/share-files#readme"
 }
