@@ -22,5 +22,9 @@ export default {
     },
     get_error: (state) => {
         return state.eError
+    },
+    get_doc_list: (state) => {
+        return state.Doc
     }
+    // get_doc_list
 }

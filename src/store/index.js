@@ -11,6 +11,7 @@ Vue.use(Vuex)
 //   storage: window.localStorage
 // })
 const store = new Vuex.Store({
+
 	state: {
 		version: 0
 	},
@@ -24,9 +25,9 @@ const store = new Vuex.Store({
 			// Check if the ID exists
 			let store = localStorage.getItem('store')
 			try {
-				console.log({
-					store: store
-				})
+				// console.log({
+				// 	store: store
+				// })
 				let data = JSON.parse(store)
 				if (data.version != undefined && data.version != null) {
 					// Replace the state object with the stored item
@@ -35,16 +36,16 @@ const store = new Vuex.Store({
 					);
 				}
 			} catch (error) {
-				let a = 0;
+				// let a = 0;
 			}
 		},
 		syncStore(state) {
 			// Check if the ID exists
 			let store = localStorage.getItem('store')
 			try {
-				console.log({
-					store: store
-				})
+				// console.log({
+				// 	store: store
+				// })
 				let data = JSON.parse(store)
 				if (data.version != undefined && data.version != null) {
 					// Replace the state object with the stored item
@@ -53,7 +54,7 @@ const store = new Vuex.Store({
 					);
 				}
 			} catch (error) {
-				let a = 0;
+				// let a = 0;
 			}
 		},
 		changeVersion(state) {

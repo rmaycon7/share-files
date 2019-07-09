@@ -1,24 +1,42 @@
+// eslint-disable-next-line to ignore the next line.
+/* eslint-disable */
+
+// module.exports = {
+//     "env": {
+//         "browser": true,
+//         "es6": true,
+//         "node": true
+//     },
+//     "extends": "plugin:vue/essential",
+//     "globals": {
+//         "Atomics": "readonly",
+//         "SharedArrayBuffer": "readonly"
+//     },
+//     "parserOptions": {
+//         "ecmaVersion": 2018,
+//         "sourceType": "module"
+//     },
+//     "plugins": [
+//         "vue"
+//     ],
+//     "rules": {}
+// };
+
+// module.exports = {}
 module.exports = {
-    "env": {
-        "browser": true,
-        "es6": true,
-        "node": true
+    root: true,
+    env: {
+        node: true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:vue/essential"
+    'extends': [
+        'plugin:vue/essential',
+        'eslint:recommended'
     ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
+    rules: {
+        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
     },
-    "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "vue"
-    ],
-    "rules": {
+    parserOptions: {
+        parser: 'babel-eslint'
     }
-};
+}

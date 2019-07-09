@@ -3,6 +3,10 @@ import actions from './actions'
 import mutations from './mutations'
 
 const state = () => ({
+  token: '',
+  email: '',
+  id: '',
+  loged: false
 })
 
 export default {

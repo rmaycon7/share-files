@@ -1,25 +1,25 @@
 <template>
     <div>
         <Header></Header>
-        <b-container class="bv-example-row bv-example-row-flex-cols">
+        <b-container class="bv-example-row bv-example-row-flex-cols content-page">
             <!-- <b-row align-v="center">
                 <b-col>One of three columns</b-col>
                 <b-col>One of three columns</b-col>
                 <b-col>One of three columns</b-col>
             </b-row>-->
             <router-view></router-view>
-            <button @click="get_files()">get Files</button>
+            <!-- <button @click="get_files()">get Files</button> -->
 
-            <button @click="get_by_type('Music')">get Music</button>
+            <!-- <button @click="get_by_type('Music')">get Music</button>
             <button @click="get_by_type('Video')">get Video</button>
             <button @click="get_by_type('Image')">get Image</button>
             <button @click="get_by_type('Doc')">get Doc</button>
             <button @click="get_by_type('Program')">get Program</button>
             <button @click="get_by_type('Compress')">get Compress</button>
             <button @click="get_by_type('Unknow')">get Unknow</button>
-            <button @click="clearLocalStorage('')">Clear LocalStore</button>
+            <button @click="clearLocalStorage('')">Clear LocalStore</button>-->
         </b-container>
-        {{ teste }}
+        <!-- {{ teste }} -->
         <!-- {{ get_music_list }} -->
     </div>
 </template>
@@ -29,6 +29,7 @@ import Header from "./components/Header";
 import { mapActions, mapGetters } from "vuex";
 // import Download from "./components/Download";
 export default {
+    name: "Share Files",
     components: {
         Header
     },
@@ -83,5 +84,8 @@ export default {
 };
 </script>
 
-<style>
+<style >
+.content-page {
+    margin-top: 3em;
+}
 </style>

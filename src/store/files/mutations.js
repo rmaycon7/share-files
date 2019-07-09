@@ -1,13 +1,13 @@
-const SET_FILE_LIST = (state, list) => {
-    // console.log({
-    //     list: list
-    // });
-    // console.log({
-    //     state: state
-    // });
+// const SET_FILE_LIST = (state, list) => {
+//     // console.log({
+//     //     list: list
+//     // });
+//     // console.log({
+//     //     state: state
+//     // });
 
-    state.list = list
-}
+//     state.list = list
+// }
 const SET_MUSIC_LIST = (state, Music) => {
     // console.log({
     //     Music: Music
@@ -89,7 +89,7 @@ const SET_ERROR = (state, eError) => {
     state.eError = eError
 }
 export default {
-    SET_FILE_LIST,
+    // SET_FILE_LIST,
     SET_DOC_LIST,
     SET_COMPRESS_LIST,
     SET_IMAGE_LIST,

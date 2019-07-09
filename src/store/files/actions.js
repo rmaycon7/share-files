@@ -4,7 +4,7 @@ const get_file_list = async ({
     commit
 }) => {
     axios.get('http://localhost:9090/files').then(response => {
-        console.log(response.data);
+        // console.log(response.data);
         // console.log
         // commit('SET_FILE_LIST', response.data.data)
         commit('SET_MUSIC_LIST', response.data.data.filter(file => {
@@ -48,7 +48,7 @@ const get_by_type = async ({
     commit
 }, type) => {
     axios.get(`http://localhost:9090/files/${type}`).then(response => {
-        console.log(response.data);
+        // console.log(response.data);
         const types = {
             Music: 'SET_MUSIC_LIST',
             Video: 'SET_VIDEO_LIST',
